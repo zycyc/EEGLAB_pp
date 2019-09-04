@@ -1,4 +1,4 @@
-# Naming rule
+# Naming Rule
 [subID, step, ProjName, StepName]
 - subID: 101, 102, 103....
 - step: for preprocessing 1~5, you can make your further steps
@@ -6,7 +6,7 @@
 - StepName: introduction of this step
 
 
-# Expected Folder structure:
+# Expected Folder Structure:
 - Project Folder
 	- EEG data
 		- 101
