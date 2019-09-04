@@ -1,43 +1,45 @@
-Naming rule: [subID, step, ProjName, StepName]
-	subID: 101, 102, 103....
-	step: for preprocessing 1~5, you can make your further steps
-	ProjName: the acronym of your project (e.g., 'ts' for 'Temporal Sequence')
-	StepName: introduction of this step
-
-Expected Folder structure:
-	Project Folder
-		EEG data
-			101
-				raw data
-				step1 data
-				step2 data
-				...
-			102
-				raw data
-				step1 data
-				step2 data
-				...
-			eeg_count (epoch counting)
-				101_ts_eeg_count.txt
-				102_ts_eeg_count.txt
-				...
-		Behavior data
-			101
-				raw behavior data (task-specific)
-			102
-				raw behavior data (task-specific)
-		Code
-			EEG_PP_1_2.m
-			EEG_PP_3a.m
-			...
-		Neuroscan (map for electrodes)
-			neuroscan_64_cap_3_2_2011.ced
-			...
-		...
+# Naming rule
+[subID, step, ProjName, StepName]
+- subID: 101, 102, 103....
+- step: for preprocessing 1~5, you can make your further steps
+- ProjName: the acronym of your project (e.g., 'ts' for 'Temporal Sequence')
+- StepName: introduction of this step
 
 
-Note:
-These preprocessing scripts are made from a study named "Temporal Sequence", in this study we need to make several pictures into a sequence, which makes the epoch part special. For experiment paradigm, check out this paper by Jordan Crivelli-Decker, Liang-Tien Hsieha, Alex Clarkea and Charan Ranganath: Theta oscillations promote temporal sequence learning
+# Expected Folder structure:
+- Project Folder
+	- EEG data
+		- 101
+			- raw data
+			- step1 data
+			- step2 data
+			- ...
+		- 102
+			- raw data
+			- step1 data
+			- step2 data
+			- ...
+		- eeg_count (epoch counting)
+			- 101_ts_eeg_count.txt
+			- 102_ts_eeg_count.txt
+			- ...
+	- Behavior data
+		- 101
+			- raw behavior data (task-specific)
+		- 102
+			- raw behavior data (task-specific)
+	- Code
+		- EEG_PP_1_2.m
+		- EEG_PP_3a.m
+		- ...
+	- Neuroscan (map for electrodes)
+		- neuroscan_64_cap_3_2_2011.ced
+		- ...
+	- ...
+
+
+# Note
+These preprocessing scripts are made from a study named "Temporal Sequence", in this study we need to make several pictures into a sequence, which makes the epoch part special. For experiment paradigm, check out this [paper](https://www.sciencedirect.com/science/article/pii/S1074742718301126) by Jordan Crivelli-Decker, Liang-Tien Hsieha, Alex Clarkea and Charan Ranganath.
 
 If you are learning to do EEG preprocessing, you can do following steps to try it out:
 	1. pick the files (.fdt + .set) from the step you want to start with, copy them from 'example_eeg/101' to 'test/101'
