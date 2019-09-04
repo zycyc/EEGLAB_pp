@@ -1,0 +1,5 @@
+Fixed1:20
+Fixed2:20
+Novel:20
+Random1:19
+Random2:20
