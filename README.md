@@ -56,3 +56,8 @@ Have fun :)
 
 -Alan
 09/03/2019
+
+### To-Do
+- EEG BIDS
+- all parameters into .mat file
+- GUI
